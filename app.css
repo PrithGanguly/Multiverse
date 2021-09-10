@@ -347,7 +347,9 @@ a.movie-item:hover {
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
-
+.top-down h1{
+    font-size: 52px;
+}
 
 .delay-2 {
     transition-delay: 0.2s;
