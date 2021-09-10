@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers Endgame</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="app.css">
+
+    <!-- Font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+
+    <!--poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+    <!-- Icon import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <!--BG style-->
+    <style>
+      body{
+        background: url(https://i.imgur.com/yB1MF7T.png);
+        background-size: cover;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+      }
+    </style>
+
+</head>
+<body>
+      <!--Navbar-->
+      <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="../index.html" class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>Multi<span class="main-color">Verse</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <!-- <li><a href="#">Genre</a></li>
+                    <li><a href="#um">Upcoming Movies</a></li>
+                    <li><a href="#dc">DC</a></li>
+                    <li><a href="#marvel">Marvel</a></li> -->
+                    <li><a href=""><i class="far fa-user"></i></a></li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Navbar-->
+    <div class="name">
+        <h1>Avengers Endgame</h1>
+        <h3>2019 ‧ Action/Sci-fi ‧ 3h 2m</h3>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <img src="https://i.imgur.com/VQbou2b.jpg" alt="">
+            <div class="buttons">
+                <button id="trailer" onclick="location.href='https://youtu.be/TcMBFSGVi1c'"> Watch trailer on Youtube </button>
+                <br>
+                <button id="full_movie" onclick="location.href='https://www.hotstar.com/in/movies/avengers-endgame/1260013556/watch'"> Watch full movie </button>
+            </div>
+        </div>
+
+        <div class="center">
+            <p id="about">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p>
+
+            <p id="director"> <span style="font-weight: bold;">Director: </span> Anthony Russo, Joe Russo </p>
+
+            <p id="cast"> <span style="font-weight: bold;">Main cast: </span> Robert Downey Jr., Chris Evans, Scarlett Johansson </p>
+        </div>
+
+        <div class="right">
+            <p id="rotten_tomatoes"> 94% Rotten Tomatoes </p>
+            <p id="imdb"> 8.4 Imdb </p>
+            <p id="metacritic"> 78% Metacritic </p>
+            
+            <button class="fav_btn"> <i class="fa fa-heart"> </i> Add this to Favourite </button>
+
+            <!-- /* Rating system */ -->
+
+            <center>
+              <div class="rating_container">
+                <div class="post">
+                  <div class="text">Thanks for the reviews</div>
+                  <div class="edit">EDIT</div>
+                </div>
+                <div class="star-widget">
+                  <input type="radio" name="rate" id="rate-5">
+                  <label for="rate-5" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-4">
+                  <label for="rate-4" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-3">
+                  <label for="rate-3" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-2">
+                  <label for="rate-2" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-1">
+                  <label for="rate-1" class="fas fa-star"></label>
+                  <form action="#">
+                    <header></header>
+                    <div class="textarea">
+                      <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                    </div>
+                    <div class="pbtn">
+                      <button type="submit">Post</button>
+                    </div>
+                  </form>
+                </div>
+            </div>
+            </center>
+            
+
+        </div>
+
+    </div>
+
+    <script>
+        const btn = document.querySelector(".pbtn");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+        btn.onclick = ()=>{
+          widget.style.display = "none";
+          post.style.display = "block";
+          editBtn.onclick = ()=>{
+            widget.style.display = "block";
+            post.style.display = "none";
+          }
+          return false;
+        }
+    </script>
+        <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!-- APP SCRIPT -->
+    <script src="app.js"></script>
+
+</body>
+</html>
