@@ -268,33 +268,45 @@ a.movie-item:hover {
         margin-left: 20px;
     }
 }
+@media only screen and (max-width: 490px){
+    .logo {
+        margin-right: 220px;
+        margin-left: 20px;
+    }
+}
 @media only screen and (max-width: 415px){
     .logo {
-        margin-right: 185px;
+        margin-right: 200px;
         margin-left: 20px;
     }
 }
 @media only screen and (max-width: 412px){
     .logo {
-        margin-right: 190px;
+        margin-right: 160px;
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .logo {
+        margin-right: 140px;
         margin-left: 20px;
     }
 }
 @media only screen and (max-width: 376px){
     .logo {
-        margin-right: 150px;
+        margin-right: 120px;
         margin-left: 20px;
     }
 }
 @media only screen and (max-width: 361px){
     .logo {
-        margin-right: 130px;
+        margin-right: 105px;
         margin-left: 20px;
     }
 }
-@media only screen and (max-width: 321px){
+@media only screen and (max-width: 335px){
     .logo {
-        margin-right: 100px;
+        margin-right: 70px;
         margin-left: 20px;
     }
 }
